@@ -28,7 +28,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var element = _react.PropTypes.element,
     bool = _react.PropTypes.bool,
-    func = _react.PropTypes.func;
+    func = _react.PropTypes.func,
+    object = _react.PropTypes.object;
 
 var Localization = function (_React$Component) {
   _inherits(Localization, _React$Component);

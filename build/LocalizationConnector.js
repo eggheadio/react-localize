@@ -14,8 +14,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = function (ComposedComponent) {
   var LocalizeConnected = function LocalizeConnected(props, context) {
-    var localize = context.localize;
-    var _localizeDebug = context._localizeDebug;
+    var localize = context.localize,
+        _localizeDebug = context._localizeDebug;
 
 
     var connectedLocalizer = localize;

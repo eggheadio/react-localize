@@ -26,11 +26,9 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var element = _react.PropTypes.element;
-var bool = _react.PropTypes.bool;
-var func = _react.PropTypes.func;
-var objectOf = _react.PropTypes.objectOf;
-var string = _react.PropTypes.string;
+var element = _react.PropTypes.element,
+    bool = _react.PropTypes.bool,
+    func = _react.PropTypes.func;
 
 var Localization = function (_React$Component) {
   _inherits(Localization, _React$Component);
@@ -38,7 +36,7 @@ var Localization = function (_React$Component) {
   function Localization(props, context) {
     _classCallCheck(this, Localization);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Localization).call(this, props, context));
+    var _this = _possibleConstructorReturn(this, (Localization.__proto__ || Object.getPrototypeOf(Localization)).call(this, props, context));
 
     _this.localize = _this.localize.bind(_this);
     return _this;
@@ -56,9 +54,9 @@ var Localization = function (_React$Component) {
     key: 'localize',
     value: function localize(key, values) {
       values = values || [];
-      var _props = this.props;
-      var messages = _props.messages;
-      var xLocale = _props.xLocale;
+      var _props = this.props,
+          messages = _props.messages,
+          xLocale = _props.xLocale;
 
 
       if (xLocale) {
@@ -82,7 +80,7 @@ Localization.propTypes = {
   children: element,
   debug: bool,
   localize: func,
-  messages: objectOf(string).isRequired,
+  messages: object.isRequired,
   xLocale: bool
 };
 

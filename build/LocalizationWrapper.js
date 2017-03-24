@@ -29,7 +29,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 exports.default = function (ComposedComponent) {
-  var messages = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+  var messages = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
   var customLocalizer = arguments[2];
 
   var ConfigureLocalization = function (_Component) {
@@ -38,7 +38,7 @@ exports.default = function (ComposedComponent) {
     function ConfigureLocalization() {
       _classCallCheck(this, ConfigureLocalization);
 
-      return _possibleConstructorReturn(this, Object.getPrototypeOf(ConfigureLocalization).apply(this, arguments));
+      return _possibleConstructorReturn(this, (ConfigureLocalization.__proto__ || Object.getPrototypeOf(ConfigureLocalization)).apply(this, arguments));
     }
 
     _createClass(ConfigureLocalization, [{
